@@ -1,4 +1,6 @@
-USE gestion_des_reservation;
+CREATE database gestion_des_reservation1;
+
+USE gestion_des_reservation1;
 CREATE TABLE clients(
     ID_client INT(11)PRIMARY KEY NOT NULL AUTO_INCREMENT,
     NOM varchar(100),
@@ -29,3 +31,4 @@ CREATE TABLE reservations(
     FOREIGN KEY (ID_CLIENT)REFERENCES clients(ID_client)ON DELETE CASCADE,
     FOREIGN KEY (ID_ACTIVITE) REFERENCES activites (ID_activite) ON DELETE CASCADE
     );
+

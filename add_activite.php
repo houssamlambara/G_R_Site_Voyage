@@ -11,7 +11,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     $place_disponible = $_POST['place_disponible'];
 echo $titre . $destination . $prix . $date_debut . $date_fin . $place_disponible;
 
-$sql = "INSERT INTO `activites`(`TITRE`,`DESCRIPTION`,`PRIX`,`DATE_DEBUT`,`DATE_FIN`,`PLACE_DISPONIBLE`)VALUES('$titre','$destination','$prix','$date_debut','$date_fin','$place_disponible')";
+$sql = "INSERT INTO `activites`(`TITRE`,`DESTINATION`,`PRIX`,`DATE_DEBUT`,`DATE_FIN`,`PLACE_DISPONIBLE`)VALUES('$titre','$destination','$prix','$date_debut','$date_fin','$place_disponible')";
 $res = $conn->query($sql);
 if(!$res){
     echo $conn->error;

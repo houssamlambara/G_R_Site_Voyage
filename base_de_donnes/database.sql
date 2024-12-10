@@ -14,7 +14,6 @@ CREATE TABLE clients(
 CREATE TABLE activites(
     ID_activite INT(11)PRIMARY KEY NOT NULL AUTO_INCREMENT,
     TITRE varchar(150),
-    DESCRIPTION text,
     DESTINATION varchar(100),
     PRIX decimal(10.2)NOT NULL,
     DATE_DEBUT date,

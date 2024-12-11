@@ -41,16 +41,16 @@
 
 <!-- Tableau des Clients -->
 <div class="bg-gray-300 p-6 rounded-lg shadow-md">
-  <h2 class="text-2xl font-bold mb-4">Liste des Clients</h2>
+  <h2 class="text-2xl font-bold mb-4">Liste des Activites</h2>
   <table class="w-full border-collapse border border-gray-400">
     <thead class="bg-gray-200">
       <tr>
-        <th class="border border-gray-400 px-4 py-2">Nom</th>
-        <th class="border border-gray-400 px-4 py-2">Prénom</th>
-        <th class="border border-gray-400 px-4 py-2">Email</th>
-        <th class="border border-gray-400 px-4 py-2">Téléphone</th>
-        <th class="border border-gray-400 px-4 py-2">Adresse</th>
-        <th class="border border-gray-400 px-4 py-2">Date de Naissance</th>
+        <th class="border border-gray-400 px-4 py-2">Titre</th>
+        <th class="border border-gray-400 px-4 py-2">Destination</th>
+        <th class="border border-gray-400 px-4 py-2">Prix</th>
+        <th class="border border-gray-400 px-4 py-2">Date Debut</th>
+        <th class="border border-gray-400 px-4 py-2">Date Fin</th>
+        <th class="border border-gray-400 px-4 py-2">Place Disponible</th>
       </tr>
 </thead>
     
@@ -58,18 +58,18 @@
 
     <?php
             include ("db.php");
-            $sql = "SELECT * FROM `clients`";
+            $sql = "SELECT * FROM `activites`";
             $res = $conn -> query($sql);
             ?>
             <?php while ($row = $res -> fetch_assoc()):?>
 
       <tr class="hover:bg-gray-100">
-        <td class="border border-gray-400 px-4 py-2"><?php echo $row ["nom"]?></td>
-        <td class="border border-gray-400 px-4 py-2"><?php echo $row ["prenom"]?></td>
-        <td class="border border-gray-400 px-4 py-2"><?php echo $row ["email"]?></td>
-        <td class="border border-gray-400 px-4 py-2"><?php echo $row ["telephone"]?></td>
-        <td class="border border-gray-400 px-4 py-2"><?php echo $row ["adresse"]?></td>
-        <td class="border border-gray-400 px-4 py-2"><?php echo $row ["date_naissance"]?></td>
+        <td class="border border-gray-400 px-4 py-2"><?php echo $row ["titre"]?></td>
+        <td class="border border-gray-400 px-4 py-2"><?php echo $row ["destination"]?></td>
+        <td class="border border-gray-400 px-4 py-2"><?php echo $row ["prix"]?></td>
+        <td class="border border-gray-400 px-4 py-2"><?php echo $row ["date_debut"]?></td>
+        <td class="border border-gray-400 px-4 py-2"><?php echo $row ["date_fin"]?></td>
+        <td class="border border-gray-400 px-4 py-2"><?php echo $row ["place_disponible"]?></td>
         </td>
       </tr>
 

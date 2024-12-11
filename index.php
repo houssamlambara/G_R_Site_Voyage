@@ -45,7 +45,7 @@
   <div class="h-full px-3 py-4 overflow-y-auto">
     <ul class="space-y-2 font-medium">
       <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-blue-700 group"><span class="ms-3">Dashboard</span></a></li>
-      <li><a href="./Client tableau.php" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-blue-700 group"><span class="ms-3">Client</span></a></li>
+      <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-blue-700 group"><span class="ms-3">Client</span></a></li>
       <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-blue-700 group"><span class="ms-3">Inbox</span></a></li>
       <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-blue-700 group"><span class="ms-3">Users</span></a></li>
       <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-blue-700 group"><span class="ms-3">Products</span></a></li>

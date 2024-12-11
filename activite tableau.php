@@ -27,9 +27,9 @@
         <!-- Navbar Links -->
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
           <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-black bg-black">
-          <li><a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-blue-700 dark:hover:text-white">Home</a></li>
-          <li><a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-blue-700 dark:hover:text-white">About</a></li>
-            <li><a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-blue-700 dark:hover:text-white">Services</a></li>
+          <li><a href="./index.php" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-blue-700 dark:hover:text-white">Home</a></li>
+          <li><a href="./Client tableau.php" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-blue-700 dark:hover:text-white">client</a></li>
+            <li><a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-blue-700 dark:hover:text-white">activite</a></li>
             <li><a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-blue-700 dark:hover:text-white">Contact</a></li>
           </ul>
         </div>
@@ -38,20 +38,6 @@
     </nav>
 
 </section class="relative">
-
-  <!-- Sidebar -->
-   
-  <aside id="logo-sidebar" class="absolute w-64 h-full bg-black transition-transform " aria-label="Sidebar">
-  <div class="h-full px-3 py-4 overflow-y-auto">
-    <ul class="space-y-2 font-medium">
-      <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-blue-700 group"><span class="ms-3">Dashboard</span></a></li>
-      <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-blue-700 group"><span class="ms-3">Kanban</span></a></li>
-      <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-blue-700 group"><span class="ms-3">Inbox</span></a></li>
-      <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-blue-700 group"><span class="ms-3">Users</span></a></li>
-      <li><a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-blue-700 group"><span class="ms-3">Products</span></a></li>
-    </ul>
-  </div>
-</aside>
 
 <!-- Tableau des Clients -->
 <div class="bg-gray-300 p-6 rounded-lg shadow-md">
@@ -65,7 +51,6 @@
         <th class="border border-gray-400 px-4 py-2">Téléphone</th>
         <th class="border border-gray-400 px-4 py-2">Adresse</th>
         <th class="border border-gray-400 px-4 py-2">Date de Naissance</th>
-        <th class="border border-gray-400 px-4 py-2">Actions</th>
       </tr>
 </thead>
     

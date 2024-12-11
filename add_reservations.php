@@ -3,12 +3,12 @@
 include('db.php');
 
 if($_SERVER['REQUEST_METHOD'] == "POST"){
-    $titre = $mysqli -> real_escape_string ($_POST['titre']);
-    $destination = $mysqli -> real_escape_string ($_POST['destination']);
-    $prix = $mysqli -> real_escape_string ($_POST['prix']);
-    $date_debut =$mysqli -> real_escape_string ($_POST['date_debut']);
-    $date_fin = $mysqli -> real_escape_string ($_POST['date_fin']);
-    $place_disponible = $mysqli -> real_escape_string ($_POST['place_disponible']);
+    $titre = htmlspecialchars ($_POST['titre']);
+    $destination = htmlspecialchars ($_POST['destination']);
+    $prix = htmlspecialchars ($_POST['prix']);
+    $date_debut = htmlspecialchars ($_POST['date_debut']);
+    $date_fin = htmlspecialchars ($_POST['date_fin']);
+    $place_disponible = htmlspecialchars ($_POST['place_disponible']);
 echo $titre . $destination . $prix . $date_debut . $date_fin . $place_disponible;
 
 $sql = "INSERT INTO `reservations`(`DATE_RESERVATION`,`STATUS`)VALUES('$titre','$destination','$prix','$date_debut','$date_fin','$place_disponible')";

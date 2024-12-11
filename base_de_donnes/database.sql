@@ -50,15 +50,8 @@ DELETE FROM reservations WHERE ID_reservation = 4;
 
 
 -- Requete de jointure --
-select  a.* from activites as a , reservations as r , clients as c
-where  a.ID_activite = r.ID_ACTIVITE
-AND r.ID_CLIENT	 = c.ID_client
-and nom='ayoub'
 
-
-
---methode inner join --
--- select  a.*  ,  c.* from activites as a 
--- inner join reservations as r  on  a.ID_activite = r.ID_ACTIVITE
--- inner join clients as c on  r.ID_CLIENT	 = c.ID_client
--- where   nom='ayoub'
+select  a.*  ,  c.* from activites as a 
+inner join reservations as r  on  a.ID_activite = r.ID_ACTIVITE
+inner join clients as c on  r.ID_CLIENT	 = c.ID_client
+where   nom='lambara'

@@ -33,7 +33,7 @@
             <li><a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white">Contact</a></li>
           </ul>
         </div>
-
+        
       </div>
     </nav>
 

@@ -56,6 +56,7 @@ AND r.ID_CLIENT	 = c.ID_client
 and nom='ayoub'
 
 
+
 --methode inner join --
 -- select  a.*  ,  c.* from activites as a 
 -- inner join reservations as r  on  a.ID_activite = r.ID_ACTIVITE

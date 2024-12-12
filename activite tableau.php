@@ -29,8 +29,8 @@
           <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-black bg-black">
           <li><a href="./index.php" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-blue-700 dark:hover:text-white">Home</a></li>
           <li><a href="./Client tableau.php" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-blue-700 dark:hover:text-white">Client List</a></li>
-            <li><a href="./activite tableau.php" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-blue-700 dark:hover:text-white">Activite List</a></li>
-            <li><a href="./reservations tableau.php" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-blue-700 dark:hover:text-white">Réservations</a></li>
+            <li><a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded-lg bg-blue-700 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-blue-700 dark:hover:text-white">Activite List</a></li>
+            <li><a href="./reservations tableau.php" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-blue-700 dark:hover:text-white">Reservations List</a></li>
           </ul>
         </div>
         
@@ -42,7 +42,7 @@
 
 <!-- Ajouter Activité -->
 <div class="bg-gray-300 p-6 rounded-lg shadow-md">
-    <h2 class="text-2xl font-bold mb-4">Ajouter une Activité</h2>
+    <h2 class="flex justify-center text-2xl font-bold mb-8">Ajouter une Activité</h2>
     <form action="add_activite.php" method="POST" class="space-y-4">
       <div>
         <label for="titre" class="block text-sm font-medium text-gray-700">Titre</label>
@@ -69,13 +69,14 @@
         <input type="number" id="place_disponible" name="place_disponible" class="p-2 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" placeholder="Nombre de places" required>
       </div>
       <div>
-        <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md shadow hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Ajouter Activité</button>
+        <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md shadow hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Ajouter une Activité</button>
       </div>
     </form>
   </div>
+
 <!-- Tableau des Clients -->
 <div class="col-span-2 bg-gray-300 p-6 rounded-lg shadow-md">
-<h2 class="text-2xl font-bold mb-4">Liste des Activites</h2>
+<h2 class="flex justify-center text-2xl font-bold mb-8">Liste des Activites</h2>
   <table class="w-full border-collapse border border-gray-400">
     <thead class="bg-gray-200">
       <tr>

@@ -82,16 +82,15 @@
       </div>
 
 
-      <!-- Status -->
       <div>
-        <label for="status" class="block text-sm font-medium text-gray-700">Status</label>
-        
-        <select name="status" id="">
-          <option value="En attente">En attente</option>
-          <option value="Confirmée">Confirmée</option>
-          <option value="Annulée">Annulée</option>
-        </select>
-      </div>
+  <label for="status" class="block text-sm font-medium text-gray-700">Status</label>
+  <select id="status" name="status" class="p-2 mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm" required>
+    <option value="">Sélectionner un status</option>
+    <option value="En_attente">En attente</option>
+    <option value="Confirmée">Confirmée</option>
+    <option value="Annulée">Annulée</option>
+  </select>
+</div>
       
 
       <button type="submit"   class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md shadow hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Ajouter une Reservation</button>

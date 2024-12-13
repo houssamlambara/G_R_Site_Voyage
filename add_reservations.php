@@ -3,19 +3,17 @@
 include('db.php');
 
 if($_SERVER['REQUEST_METHOD'] == "POST"){
-    $titre = htmlspecialchars ($_POST['titre']);
-    $destination = htmlspecialchars ($_POST['destination']);
-    $prix = htmlspecialchars ($_POST['prix']);
-    $date_debut = htmlspecialchars ($_POST['date_debut']);
-    $date_fin = htmlspecialchars ($_POST['date_fin']);
-    $place_disponible = htmlspecialchars ($_POST['place_disponible']);
-echo $titre . $destination . $prix . $date_debut . $date_fin . $place_disponible;
+    $id_clt = htmlspecialchars ($_POST['client']);
+    $id_act = htmlspecialchars ($_POST['activite']);
+    // $prix = htmlspecialchars ($_POST['date']);
+    $st = htmlspecialchars ($_POST['status']);
 
-$sql = "INSERT INTO `reservations`(`DATE_RESERVATION`,`STATUS`)VALUES('$titre','$destination','$prix','$date_debut','$date_fin','$place_disponible')";
+$sql = "INSERT INTO reservations ( `ID_client`, `ID_activite`, `date_reservation`, `status`) VALUES ( '$id_clt', '$id_act' , current_timestamp(),'$st')  ;";
 $res = $conn->query($sql);
 if(!$res){
     echo $conn->error;
 }else{
-    header('Location: index.php');
+    header('Location: reservations tableau.php');
 }}
+
 

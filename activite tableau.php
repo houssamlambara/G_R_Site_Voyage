@@ -13,7 +13,7 @@
       <div class=" max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         
         <!-- Logo -->
-        <a href="#" class="flex items-center space-x-3">
+        <a href="./index.php" class="flex items-center space-x-3">
           <img src="./youcode_logo_dark.png" class="h-8" alt="Logo" />
         </a>
         
@@ -78,19 +78,18 @@
 <div class="col-span-2 bg-gray-300 p-6 rounded-lg shadow-md">
 <h2 class="flex justify-center text-2xl font-bold mb-8">Liste des Activites</h2>
   <table class="w-full border-collapse border border-gray-400">
-    <thead class="bg-gray-200">
+    <thead class="bg-black">
       <tr>
-        <th class="border border-gray-400 px-4 py-2">Titre</th>
-        <th class="border border-gray-400 px-4 py-2">Destination</th>
-        <th class="border border-gray-400 px-4 py-2">Prix</th>
-        <th class="border border-gray-400 px-4 py-2">Date Debut</th>
-        <th class="border border-gray-400 px-4 py-2">Date Fin</th>
-        <th class="border border-gray-400 px-4 py-2">Place Disponible</th>
+        <th class="text-white px-4 py-2">Titre</th>
+        <th class="text-white px-4 py-2">Destination</th>
+        <th class="text-white px-4 py-2">Prix</th>
+        <th class="text-white px-4 py-2">Date Debut</th>
+        <th class="text-white px-4 py-2">Date Fin</th>
+        <th class="text-white px-4 py-2">Place Disponible</th>
       </tr>
 </thead>
     
     <tbody>
-
     <?php
             include ("db.php");
             $sql = "SELECT * FROM `activites`";
@@ -98,7 +97,7 @@
             ?>
             <?php while ($row = $res -> fetch_assoc()):?>
 
-      <tr class="hover:bg-gray-100">
+      <tr class="hover:bg-blue-500">
         <td class="border border-gray-400 px-4 py-2"><?php echo $row ["titre"]?></td>
         <td class="border border-gray-400 px-4 py-2"><?php echo $row ["destination"]?></td>
         <td class="border border-gray-400 px-4 py-2"><?php echo $row ["prix"]?></td>

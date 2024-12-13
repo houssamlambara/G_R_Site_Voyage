@@ -16,6 +16,6 @@ $res = $conn->query($sql);
 if(!$res){
     echo $conn->error;
 }else{
-    header('Location: index.php');
+    header('Location: activite tableau.php');
 }}
 

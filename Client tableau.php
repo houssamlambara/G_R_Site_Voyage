@@ -13,7 +13,7 @@
       <div class=" max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         
         <!-- Logo -->
-        <a href="#" class="flex items-center space-x-3">
+        <a href="./index.php" class="flex items-center space-x-3">
           <img src="./youcode_logo_dark.png" class="h-8" alt="Logo" />
         </a>
         
@@ -74,18 +74,18 @@
   </div>
 
   <!-- Tableau des Clients -->
-  <div class="col-span-2 bg-gray-300 p-6 rounded-lg shadow-md overflow-y-auto">
+  <div class="col-span-2 bg-gray-200 p-6 rounded-lg shadow-md overflow-y-auto">
     <h2 class="flex justify-center text-2xl font-bold mb-8">Liste des Clients</h2>
     <div>
       <table class="w-full border-collapse border border-gray-400">
-        <thead class="bg-gray-200">
+        <thead class="bg-black">
           <tr>
-            <th class="border border-gray-400 px-4 py-2">Nom</th>
-            <th class="border border-gray-400 px-4 py-2">Prénom</th>
-            <th class="border border-gray-400 px-4 py-2">Email</th>
-            <th class="border border-gray-400 px-4 py-2">Téléphone</th>
-            <th class="border border-gray-400 px-4 py-2">Adresse</th>
-            <th class="border border-gray-400 px-4 py-2">Date de Naissance</th>
+            <th class="border border-white text-white px-4 py-2">Nom</th>
+            <th class="border border-white text-white px-4 py-2">Prénom</th>
+            <th class="border border-white text-white px-4 py-2">Email</th>
+            <th class="border border-white text-white px-4 py-2">Téléphone</th>
+            <th class="border border-white text-white px-4 py-2">Adresse</th>
+            <th class="border border-white text-white px-4 py-2">Date de Naissance</th>
           </tr>
         </thead>
         <tbody>
@@ -94,13 +94,13 @@
             $sql = "SELECT * FROM `clients`"; 
             $res = $conn -> query($sql);
             while ($row = $res -> fetch_assoc()): ?>
-            <tr class="hover:bg-gray-100">
-              <td class="border border-gray-400 px-4 py-2"><?php echo $row["nom"] ?></td>
-              <td class="border border-gray-400 px-4 py-2"><?php echo $row["prenom"] ?></td>
-              <td class="border border-gray-400 px-4 py-2"><?php echo $row["email"] ?></td>
-              <td class="border border-gray-400 px-4 py-2"><?php echo $row["telephone"] ?></td>
-              <td class="border border-gray-400 px-4 py-2"><?php echo $row["adresse"] ?></td>
-              <td class="border border-gray-400 px-4 py-2"><?php echo $row["date_naissance"] ?></td>
+            <tr class="hover:bg-blue-500">
+              <td class="border border-white px-4 py-2"><?php echo $row["nom"] ?></td>
+              <td class="border border-white px-4 py-2"><?php echo $row["prenom"] ?></td>
+              <td class="border border-white px-4 py-2"><?php echo $row["email"] ?></td>
+              <td class="border border-white px-4 py-2"><?php echo $row["telephone"] ?></td>
+              <td class="border border-white px-4 py-2"><?php echo $row["adresse"] ?></td>
+              <td class="border border-white px-4 py-2"><?php echo $row["date_naissance"] ?></td>
             </tr>
           <?php endwhile; ?>
         </tbody>

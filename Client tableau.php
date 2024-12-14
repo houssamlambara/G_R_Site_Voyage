@@ -36,10 +36,8 @@
       </div>
     </nav>
 
-</section class="relative">
+<div class="p-4 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"> 
 
-<div class="p-4 grid grid-cols-3 gap-6"> 
-  <!-- Ajouter Client -->
   <div class="col-span-1 bg-gray-300 p-6 rounded-lg shadow-md">
     <h2 class="flex justify-center text-2xl font-bold mb-8">Ajouter un Client</h2>
     <form action="add_client.php" method="POST" class="space-y-4">
@@ -73,8 +71,7 @@
     </form>
   </div>
 
-  <!-- Tableau des Clients -->
-  <div class="col-span-2 bg-gray-200 p-6 rounded-lg shadow-md overflow-y-auto">
+  <div class="col-span-1 md:col-span-2 bg-gray-200 p-6 rounded-lg shadow-md overflow-x-auto">
     <h2 class="flex justify-center text-2xl font-bold mb-8">Liste des Clients</h2>
     <div>
       <table class="w-full border-collapse border border-gray-400">
@@ -109,3 +106,5 @@
   </div>
 </div>
 
+</body>
+</html>

@@ -38,9 +38,8 @@
     </nav>
 </section class="relative">
 
-<div class="p-4 grid grid-cols-3 gap-6"> 
+<div class="p-4 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"> 
 
-<!-- Ajouter Activité -->
 <div class="bg-gray-300 p-6 rounded-lg shadow-md">
     <h2 class="flex justify-center text-2xl font-bold mb-8">Ajouter une Activité</h2>
     <form action="add_activite.php" method="POST" class="space-y-4">
@@ -74,20 +73,19 @@
     </form>
   </div>
 
-<!-- Tableau des Clients -->
-<div class="col-span-2 bg-gray-300 p-6 rounded-lg shadow-md">
-<h2 class="flex justify-center text-2xl font-bold mb-8">Liste des Activites</h2>
+<div class="col-span-1 md:col-span-2 bg-gray-300 p-6 rounded-lg shadow-md overflow-x-auto">
+<h2 class="flex justify-center text-2xl font-bold mb-8">Liste des Activités</h2>
   <table class="w-full border-collapse border border-gray-400">
     <thead class="bg-black">
       <tr>
         <th class="text-white px-4 py-2">Titre</th>
         <th class="text-white px-4 py-2">Destination</th>
         <th class="text-white px-4 py-2">Prix</th>
-        <th class="text-white px-4 py-2">Date Debut</th>
+        <th class="text-white px-4 py-2">Date Début</th>
         <th class="text-white px-4 py-2">Date Fin</th>
-        <th class="text-white px-4 py-2">Place Disponible</th>
+        <th class="text-white px-4 py-2">Places Disponibles</th>
       </tr>
-</thead>
+    </thead>
     
     <tbody>
     <?php
@@ -114,3 +112,5 @@
   </table>
 </div>
 </div>
+</body>
+</html>
